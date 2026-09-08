@@ -8,8 +8,10 @@
 
 
 
-int main(void)
+int main(int argc, char *argv[])
 {
+    
+
     //usage message displayed to user
     char *useMsg = "Usage: myapp -f <from> -t <to> [-s subject] [-b body] [-p port]\n"
                        "         [-H helo-host] <server>\n"
@@ -22,6 +24,6 @@ int main(void)
                        "-H <helo-host>  host name sent with HELO (default: localhost)\n"
                        "<server>        host name or address of the mail server\n";
     
-    printf("%s\n", useMsg);
+    // printf("%s\n", useMsg);
     return 0;
 }
